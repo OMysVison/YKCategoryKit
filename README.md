@@ -22,7 +22,7 @@ pod 'YKCategoryKit'
 
 ## Author
 
-75438777@qq.com, 75438777@qq.com
+O_MysVison
 
 ## License
 
