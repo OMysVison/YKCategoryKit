@@ -7,6 +7,7 @@
 //
 
 #import "YKViewController.h"
+#import "NetworkHelper.h"
 
 @interface YKViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[NetworkHelper sharedInstance] requestMethod:@"GET" url:@"https://www.baidu.com" parameters:nil finishBlock:^(id data, NSError *error) {
+        if (error) {
+            NSLog(@"error----:%@",error);
+        }else{
+            NSLog(@"data----:%@",data);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
