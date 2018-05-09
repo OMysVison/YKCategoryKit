@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YKCategoryKit_Example' do
+  pod 'YKCategoryKit', :path => '../'
+
+  target 'YKCategoryKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
